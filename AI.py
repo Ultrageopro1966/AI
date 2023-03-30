@@ -64,7 +64,7 @@ for iteration in range(learning_iterations):
 # CHECKING THE CORRECTNESS OF THE SCALES
 correctAnswers = 0
 totalAnswers = 10000
-for _ in range(10000):
+for _ in range(totalAnswers):
     sample = [choice([0, 1]) for _ in range(3)]
     correct_answer = 1 if sample[1] == 1 or sample[2] == 1 else 0
     AI_answer = ceil(AI_prediction(sample) - 0.5)
